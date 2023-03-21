@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-assets>
+    <a-assets-item id="cubes" src="src/cube.glb"> 
+    </a-assets>
+
+    <a-scene>
+
+	    
+
+      <a-marker id="marker_1" type="pattern" url="pat\pattern_1.patt">
+        <a-gltf-model id="#cubes"></a-gltf-model>
+      </a-marker>
+
+      
+
+      <a-entity camera></a-entity>
+
+    </a-scene>
+  </body>
+</html>
